@@ -1,0 +1,29 @@
+{
+  "name": "taskable",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "next": "latest",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-normalize": "^10.0.1",
+    "postcss-preset-env": "^9.1.4",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "typescript": "latest"
+  }
+}

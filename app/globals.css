@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+/* START: General styles */
+.max-width {
+  @apply max-w-[1440px] mx-auto;
+}
+
+.padding-x {
+  @apply sm:px-16 px-6;
+}
+
+.padding-y {
+  @apply py-4;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.custom-btn {
+  @apply flex flex-row relative justify-center items-center py-1 px-3 outline;
+}
+/* END: General styles */
+
+/* START: Taskable styles */
+.taskable {
+  @apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto;
+}
+
+.taskable__title {
+  @apply 2xl:text-[72px] sm:text-[48px] text-[36px] font-extrabold;
+}
+
+.taskable__subtitle {
+  @apply text-[18px] text-black-100 font-light mt-5;
+}
+
+.taskable__image-container {
+  @apply xl:flex-[1.5] flex justify-end items-end w-full;
+}
+
+.taskable__image {
+  @apply relative xl:w-full w-[90%] xl:h-full h-[100%] z-0 mt-5 ml-5;
+}
+
+/* END: taskable styles */
+
+/* START: Home styles */
+
+.home__text-container {
+  @apply flex flex-col items-start justify-start gap-y-2.5 text-black-100;
+}
+
+.home__filters {
+  @apply mt-12 w-full flex-between items-center flex-wrap gap-5;
+}
+
+.home__filter-container {
+  @apply flex justify-start flex-wrap items-center gap-2;
+}
+
+/* END: Home styles */
+
+/* START: Task card styles */
+.issue-row {
+  @apply flex flex-col p-6 justify-center items-start text-black-100 hover:shadow-md  border-t-4 border-l-4 border-r-4 ;
+}
+
+.issue-row__content {
+  @apply w-full flex justify-start items-center justify-between;
+}
+
+.issue-row__content-title {
+  @apply text-[16px] leading-[26px] font-bold capitalize ;
+}
+
+/* END: task card styles */
+
+/* START: searchbar styles */
+.searchbar {
+  @apply contents items-center justify-start max-sm:flex-col w-[100%] relative max-sm:gap-4 max-w-3xl;
+}
+
+.searchbar__item {
+  @apply flex-1 max-sm:w-full flex justify-start ml-4 items-center relative;
+}
+
+.searchbar__input {
+  @apply w-full h-[48px] pl-12 p-4   max-sm:rounded-full ml-4 outline-none cursor-pointer text-sm border border-black;
+}
+/* END: searchbar styles */
+
+/* START: search author styles */
+.search-label {
+  @apply flex-1 max-sm:w-full flex justify-start  ml-4 items-center;
+}
+
+.search-label__input {
+  @apply w-full h-[48px] pl-12 p-4  max-sm:rounded-full  outline-none cursor-pointer text-sm text-black border border-black;
+}
+
+.search-label__options {
+  @apply mt-1 max-h-60 w-full overflow-auto py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
+}
+
+.search-label__option {
+  @apply cursor-default select-none py-2 pl-10 pr-4;
+}
+/* END: search author styles */
